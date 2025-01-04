@@ -1,3 +1,16 @@
+VOUS AVEZ DEUX OPTIONS : 
+1)  LANCER L'APPLICATION à PARTIR DE DOCKER :
+pour cela vous aller dans le repertoire ColleManagement (cd CollegeManagemant)
+puis vous allez lancer la commande suivante : docker-compose up
+LANCER L'APPLICATION A PARTIR DE VOS LOCALS :  http://127.0.0.1:8000/
+
+
+
+
+
+2)CHOISIR D'INSTALLER TOUTES LES BIBLIOTHEQUES AVANT DE LANCER LA PLATFORME . POUR CE FAIRE SUIVRE 
+LES INSTRUCTIONS CI-DESSOUS.
+
 Vous activez le virtual environnement 
 "env\Scripts\activate"
 

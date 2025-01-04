@@ -1,0 +1,20 @@
+FROM python:3.11
+
+# Installer les dépendances système pour PyAudio
+RUN apt-get update && apt-get install -y \
+    libportaudio2 \
+    portaudio19-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /College-Management-System-CMS
+
+# Copier et installer les dépendances Python
+COPY requirements.txt .
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
+
+# Copier le reste de l'application
+COPY . .
+
+# Lancer le serveur Django
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

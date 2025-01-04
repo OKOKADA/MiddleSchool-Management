@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/College-Management-System-CMS  # Montez le répertoire courant
+      - ./db.sqlite3:/College-Management-System-CMS/db.sqlite3  # Montez db.sqlite3
